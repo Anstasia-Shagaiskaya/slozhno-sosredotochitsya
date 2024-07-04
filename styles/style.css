@@ -3,10 +3,10 @@
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   font-size: 18px;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
  }
  
  .header {
@@ -152,11 +152,23 @@
   line-height: 130%;
   }
 
-  a {
+  .block__text-link {
   border: 1px solid transparent;
   text-decoration: none;
   color: var(--text-color);
   text-shadow: 1px 1px 0 var(--accent-color);
+  }
+
+  .block__text-link:hover {
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  .block__text-link:focus {
+    outline: none;
+  }
+
+  .block__text-link:focus-visible {
+    outline: 1px solid var(--text-color);
   }
 
   .block__how {
